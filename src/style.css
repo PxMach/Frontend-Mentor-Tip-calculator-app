@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  margin-bottom: 50px;
+  color: hsl(183, 100%, 15%);
+}
+/* container */
+.container {
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 400px;
+  width: 800px;
+}
+p {
+  color: hsl(186, 14%, 43%);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+/* left-side */
+.container .left-side {
+  border-radius: 15px;
+  margin: 30px;
+  width: 50%;
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: hsl(189, 47%, 97%);
+  height: 35px;
+  margin-bottom: 25px;
+}
+.input:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+.input img {
+  width: 10px;
+  height: 12px;
+  margin-left: 10px;
+}
+.input input {
+  background-color: hsl(189, 47%, 97%);
+  border: none;
+  outline: none;
+  height: 100%;
+  font-size: 24px;
+  text-align: right;
+}
+input::placeholder {
+  text-align: right;
+}
+/* tip buttons */
+.left-side .tip-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.tip-buttons button {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 5px;
+}
+.tip-buttons button:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+.tip-buttons input {
+  background-color: hsl(200, 11%, 95%);
+  color: hsl(183, 100%, 15%);
+  height: 40px;
+  width: 103px;
+  border: none;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+}
+.tip-buttons input:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+.error{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#error-people {
+  display: none;
+  color: red;
+  font-size: 12px;
+  text-align: right;
+}
+/* right-side */
+.container .right-side {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  margin: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.right-side .person {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px 40px;
+}
+.person p {
+  color: white;
+}
+.person span {
+  color: hsl(186, 14%, 43%);
+  font-weight: 600;
+}
+.right-side .person p:nth-last-child(1) {
+  font-size: 36px;
+  font-weight: 600;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(172, 67%, 45%);
+  text-align: right;
+  border: none;
+}
+.right-side button {
+  background-color: hsl(185, 40%, 29%);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(185, 69%, 31%);
+}
+.right-side button:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
