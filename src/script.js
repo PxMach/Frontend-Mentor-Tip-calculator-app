@@ -18,7 +18,7 @@ function tips(event) {
   if (!isNaN(tipValue) && nbPeople.value > 0) {
     tipAmount =
       (parseFloat(bill.value) * parseFloat(tipValue)) / 100 / nbPeople.value; // Calculate the tip amount per person
-    totalAmount = parseFloat(bill.value) + tipAmount; // Calculate the total amount per person
+    totalAmount = parseFloat(bill.value) + tipAmount / nbPeople.value; // Calculate the total amount per person
     tipAmountElement.textContent = `$${tipAmount.toFixed(2)}`; // Display the tip amount
     totalAmountElement.textContent = `$${totalAmount.toFixed(2)}`; // Display the total amount
     errorPeople.style.display = "none"; // Hide the error message
